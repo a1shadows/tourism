@@ -1,12 +1,21 @@
 <div class = "mnd">
-      <div class= "back"></div>
-       <div class = "search">
+      <div class= "back" onclick="closeNav()"></div>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<br>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+      <div class = "glyph"><span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()"></span></div>
+       <div class = "search" onclick="closeNav()">
          <div class = "container-fluid">
          <div class = "row">
            <div class = "col-lg-6 col-lg-offset-3">
              <form>
             <input class="abc" type = "text" placeholder="Search"/>
             <input type = "submit" style = "display: none;"/>
+            <div class = "plus1"><span class="glyphicon glyphicon-plus-sign"></span></div>
           </form>
           </div>
           </div>
