@@ -1,6 +1,6 @@
 .mnd{
   display: none;
-  font-family: 'EB Garamond', sans-serif;
+  font-family: 'Bellefair', sans-serif;
   letter-spacing: 2px;
 }
 #backgroundchange{
@@ -254,7 +254,7 @@ animation-duration: 40s;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.9);
   display:none;
-  font-size: 25px;
+  font-size: 20px;
   border-color: rgba(201, 201, 201, 1)
 }
 
