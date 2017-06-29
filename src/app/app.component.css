@@ -1,3 +1,8 @@
+.mnd{
+  display: none;
+  font-family: 'EB Garamond', sans-serif;
+  letter-spacing: 2px;
+}
 #backgroundchange{
     position: fixed;
     width:100%;
@@ -180,7 +185,7 @@ animation-duration: 40s;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #f1f1f1
 }
 
 .sidenav .closebtn {
@@ -196,11 +201,15 @@ animation-duration: 40s;
   .sidenav a {font-size: 18px;}
 }
 .plus1{
-  margin-left: 117%;
-  margin-top: -7.45%;
+  margin-left: 25%;
+  margin-top: 1%;
   color:white;
   font-size: 30px;
 }
+.plus1:hover{
+  color: #818181;
+}
+
 .glyph
 {
   color:white;
@@ -216,14 +225,13 @@ animation-duration: 40s;
 }
 
 .search input {
-  margin-left: 4%;
-  width:100%;
+  margin-left: -4%;
+  width:120%;
   height:50px;
-  color: black;
-  font-size: 50px;
+  font-size: 35px;
   border-left-width:0px;
   border-right-width:0px;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.8);
   border-top-color: white;
   color:white;
   border-radius: 10px;
@@ -231,9 +239,33 @@ animation-duration: 40s;
   -webkit-transition: all .4s ease-in-out;
 }
 .search input:focus{
-    background-color:rgba(0, 0, 0, 0.9);
-  width:120%;
-  margin-left: -4%;
+  background-color:rgba(0, 0, 0, 0.9);
   transition: all .4s ease-in-out;
+  margin-left: -4%;
   -webkit-transition: all .4s ease-in-out;
+}
+
+.panel{
+  margin-left: -4%;
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display:none;
+  font-size: 25px;
+  border-color: rgba(201, 201, 201, 1)
+}
+
+.panel:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  top: -15px;
+  left: 50px;
+  width: 0;
+  border-width: 0px 15px 15px 15px;
+  border-style: solid;
+  border-color: rgba(201, 201, 201, 1) transparent;
 }
