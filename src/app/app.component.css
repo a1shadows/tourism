@@ -231,7 +231,7 @@ animation-duration: 40s;
   font-size: 35px;
   border-left-width:0px;
   border-right-width:0px;
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color:rgba(0, 0, 0, 0.9);
   border-top-color: white;
   color:white;
   border-radius: 10px;
@@ -239,7 +239,7 @@ animation-duration: 40s;
   -webkit-transition: all .4s ease-in-out;
 }
 .search input:focus{
-  background-color:rgba(0, 0, 0, 0.9);
+  background-color:rgba(0, 0, 0, 1);
   transition: all .4s ease-in-out;
   margin-left: -4%;
   -webkit-transition: all .4s ease-in-out;

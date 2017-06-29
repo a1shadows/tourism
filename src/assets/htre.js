@@ -18,10 +18,10 @@ $(document).ready(function(){
 
 $('.abc').bind('blur', function(){
   $('.backgroundimg').css({'-webkit-filter': 'grayscale(0%)',
-                '-moz-filter': 'grayscale(0%)',
-                '-ms-filter': 'grayscale(0%)',
-                '-o-filter': 'grayscale(0%)',
-                'filter': 'grayscale(0%)',
+                '-moz-filter': 'grayscale(50%)',
+                '-ms-filter': 'grayscale(50%)',
+                '-o-filter': 'grayscale(50%)',
+                'filter': 'grayscale(50%)',
 });
 });
 
