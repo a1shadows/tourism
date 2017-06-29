@@ -1,27 +1,50 @@
 $(document).ready(function(){
+  $('.mnd').show();
   $('.abc').bind('focus', function(){
             $('.backgroundimg').css({
-                  '-moz-filter': ' grayscale(100%)',
-                  '-webkit-filter': ' grayscale(100%)',
-                  '-ms-filter': ' grayscale(100%)',
-                  '-o-filter': ' grayscale(100%)',
-                  'filter': ' grayscale(100%)',
-                  '-webkit-transition': '0.5s -webkit-filter linear',
-                  '-moz-transition': '0.5s -moz-filter linear',
-                  '-moz-transition': '0.5s filter linear',
-                  '-ms-transition': '0.5s -ms-filter linear',
-                  '-o-transition': '0.5s -o-filter linear',
-                  'transition': '0.5s filter linear'
+                  '-moz-filter': ' grayscale(70%)',
+                  '-webkit-filter': ' grayscale(70%)',
+                  '-ms-filter': ' grayscale(70%)',
+                  '-o-filter': ' grayscale(70%)',
+                  'filter': ' grayscale(70%)',
+                  '-webkit-transition': '0.3s -webkit-filter linear',
+                  '-moz-transition': '0.3s -moz-filter linear',
+                  '-moz-transition': '0.3s filter linear',
+                  '-ms-transition': '0.3s -ms-filter linear',
+                  '-o-transition': '0.3s -o-filter linear',
+                  'transition': '0.3s filter linear'
   });
 });
 
 $('.abc').bind('blur', function(){
-  $('.backgroundimg').css({'-webkit-filter': 'blur(0px)',
-                '-moz-filter': 'blur(0px)',
-                '-ms-filter': 'blur(0px)',
-                '-o-filter': 'blur(0px)',
-                'filter': 'blur(0px)',
+  $('.backgroundimg').css({'-webkit-filter': 'grayscale(0%)',
+                '-moz-filter': 'grayscale(0%)',
+                '-ms-filter': 'grayscale(0%)',
+                '-o-filter': 'grayscale(0%)',
+                'filter': 'grayscale(0%)',
 });
 });
 
+});
+
+function openModal() {
+    $("#myModal").show();
+  };
+
+
+  function closeModal(){
+  $("#myModal").hide();
+};
+
+$(document).ready(function(){
+    $(".abc").focus(function(){
+        $(".panel").slideDown(300);
+        $(".arrow-up").slideDown(300);
+        $(".abc").attr("placeholder"," Enter hotel or present location.");
+    });
+
+    $(".abc").blur(function(){
+        $(".panel").slideUp("slow");
+        $(".abc").attr("placeholder","Click for more information.");
+    });
 });
