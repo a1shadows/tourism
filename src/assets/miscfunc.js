@@ -1,5 +1,12 @@
 $(document).ready(function(){
   $('.mnd').show();
+  $('.backgroundimg').css({'-webkit-filter': 'grayscale(20%)',
+                '-moz-filter': 'grayscale(20%)',
+                '-ms-filter': 'grayscale(20%)',
+                '-o-filter': 'grayscale(20%)',
+                'filter': 'grayscale(20%)',
+});
+
   $('.abc').bind('focus', function(){
             $('.backgroundimg').css({
                   '-moz-filter': ' grayscale(70%)',
@@ -17,11 +24,11 @@ $(document).ready(function(){
 });
 
 $('.abc').bind('blur', function(){
-  $('.backgroundimg').css({'-webkit-filter': 'grayscale(0%)',
-                '-moz-filter': 'grayscale(50%)',
-                '-ms-filter': 'grayscale(50%)',
-                '-o-filter': 'grayscale(50%)',
-                'filter': 'grayscale(50%)',
+  $('.backgroundimg').css({'-webkit-filter': 'grayscale(20%)',
+                '-moz-filter': 'grayscale(20%)',
+                '-ms-filter': 'grayscale(20%)',
+                '-o-filter': 'grayscale(20%)',
+                'filter': 'grayscale(20%)',
 });
 });
 
