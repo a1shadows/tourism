@@ -1,25 +1,19 @@
 $(document).ready(function(){
   $('.mnd').show();
-  $('.backgroundimg').css({'-webkit-filter': 'grayscale(20%)',
-                '-moz-filter': 'grayscale(20%)',
-                '-ms-filter': 'grayscale(20%)',
-                '-o-filter': 'grayscale(20%)',
-                'filter': 'grayscale(20%)',
-});
 
   $('.abc').bind('focus', function(){
             $('.backgroundimg').css({
-                  '-moz-filter': ' grayscale(70%)',
-                  '-webkit-filter': ' grayscale(70%)',
-                  '-ms-filter': ' grayscale(70%)',
-                  '-o-filter': ' grayscale(70%)',
-                  'filter': ' grayscale(70%)',
-                  '-webkit-transition': '0.3s -webkit-filter linear',
-                  '-moz-transition': '0.3s -moz-filter linear',
-                  '-moz-transition': '0.3s filter linear',
-                  '-ms-transition': '0.3s -ms-filter linear',
-                  '-o-transition': '0.3s -o-filter linear',
-                  'transition': '0.3s filter linear'
+                  '-moz-filter': ' grayscale(70%) blur(4px)',
+                  '-webkit-filter': ' grayscale(70%) blur(4px)',
+                  '-ms-filter': ' grayscale(70%) blur(4px)',
+                  '-o-filter': ' grayscale(70%) blur(4px)',
+                  'filter': ' grayscale(70%) blur(4px)',
+                  '-webkit-transition': '0.2s -webkit-filter linear',
+                  '-moz-transition': '0.2s -moz-filter linear',
+                  '-moz-transition': '0.2s filter linear',
+                  '-ms-transition': '0.2s -ms-filter linear',
+                  '-o-transition': '0.2s -o-filter linear',
+                  'transition': '0.2s filter linear'
   });
 });
 
@@ -29,29 +23,26 @@ $('.abc').bind('blur', function(){
                 '-ms-filter': 'grayscale(20%)',
                 '-o-filter': 'grayscale(20%)',
                 'filter': 'grayscale(20%)',
+                '-webkit-transition': '0.2s -webkit-filter linear',
+                '-moz-transition': '0.2s -moz-filter linear',
+                '-moz-transition': '0.2s filter linear',
+                '-ms-transition': '0.2s -ms-filter linear',
+                '-o-transition': '0.2s -o-filter linear',
+                'transition': '0.2s filter linear'
 });
 });
 
-});
-
-function openModal() {
-    $("#myModal").show();
-  };
-
-
-  function closeModal(){
-  $("#myModal").hide();
-};
-
-$(document).ready(function(){
     $(".abc").focus(function(){
-        $(".panel").slideDown(300);
-        $(".arrow-up").slideDown(300);
+      setTimeout(function(){
+        $(".panel").fadeIn(300);
         $(".abc").attr("placeholder"," Enter hotel or present location.");
+      }, 300);
     });
 
     $(".abc").blur(function(){
-        $(".panel").slideUp("slow");
+      setTimeout(function(){
+        $(".panel").fadeOut(300);
         $(".abc").attr("placeholder","Click for more information.");
+      }, 300);
     });
 });
