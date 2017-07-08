@@ -19,13 +19,14 @@
          <div class = "container-fluid">
          <div class = "row">
            <div class = "col-lg-6 col-lg-offset-3">
-             <form>
-            <input class="abc" onclick="closeNav()" type = "text" placeholder="Click for more information."/>
+            <form>
+              <input class="abc" onclick="closeNav()" type = "text" placeholder="Click for more information." spellcheck="off" [formControl] = "searchControl" #search/>
 
             <div class = "panel">
               <ul>
                 <li>The results will display attractions near you.</li>
                 <li>Upon selecting an attraction, you can view their prices.</li>
+                <li>{{lat}}</li>
               </ul>
             </div>
             <input type = "submit" style = "display: none;"/>
@@ -35,5 +36,4 @@
         </div>
 
         </div>
-
 </div>
